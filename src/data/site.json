@@ -1,0 +1,25 @@
+{
+  "lang": "en-GB",
+  "brand": "Nexvita",
+  "title": "Nexvita | Yoga and physio in the park",
+  "description": "Yoga and exercise-based physiotherapy outdoors in Islington and Camden parks. Nature to heal the body and mind.",
+  "tagline": "Yoga and physio in the park. Nature to heal the body and mind.",
+  "hero": {
+    "headline": "Nexvita",
+    "subtext": "Yoga and physio in the park. Nature to heal the body and mind.",
+    "buttonText": "Book a session",
+    "buttonLink": "#physio",
+    "image": "images/hero.jpg"
+  },
+  "about": {
+    "id": "about", "menu": "About", "heading": "About us",
+    "text": "[PLACEHOLDER: a short, warm introduction to you and your yoga teacher partner, your qualifications, and why you teach outdoors.]"
+  },
+  "contact": {
+    "id": "contact", "menu": "Contact", "heading": "Contact",
+    "text": "[PLACEHOLDER: contact email or form.]",
+    "email": "",
+    "phone": ""
+  },
+  "footer": "© Nexvita. Yoga and physio in the park."
+}

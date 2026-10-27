@@ -1,0 +1,36 @@
+[
+  {
+    "id": "physio",
+    "menu": "Physio",
+    "heading": "Physio in the park",
+    "type": "one-to-one",
+    "capacity": 1,
+    "text": "[PLACEHOLDER: one-to-one, exercise-based physiotherapy sessions outdoors. What to expect, session length and price.]",
+    "showDetails": false,
+    "details": {
+      "whoFor": "[PLACEHOLDER: who it is for]",
+      "whatToExpect": "[PLACEHOLDER: what to expect]",
+      "length": "[PLACEHOLDER: session length]",
+      "price": "[PLACEHOLDER: price]"
+    },
+    "bookingPlaceholder": "Physio booking calendar will appear here",
+    "bookingEmbed": ""
+  },
+  {
+    "id": "yoga",
+    "menu": "Yoga",
+    "heading": "Yoga in the park",
+    "type": "group",
+    "capacity": 12,
+    "text": "[PLACEHOLDER: group yoga classes under the trees. Level, what to bring, class size and price.]",
+    "showDetails": false,
+    "details": {
+      "whoFor": "[PLACEHOLDER: who it is for / level]",
+      "whatToExpect": "[PLACEHOLDER: what to expect and what to bring]",
+      "length": "[PLACEHOLDER: class length]",
+      "price": "[PLACEHOLDER: price]"
+    },
+    "bookingPlaceholder": "Yoga class booking calendar will appear here",
+    "bookingEmbed": ""
+  }
+]

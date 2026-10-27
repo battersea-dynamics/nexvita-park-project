@@ -1,0 +1,10 @@
+{
+  "id": "faq",
+  "menu": "FAQs",
+  "heading": "FAQs",
+  "items": [
+    { "q": "What should I bring?", "a": "[PLACEHOLDER]" },
+    { "q": "What if it rains?", "a": "[PLACEHOLDER]" },
+    { "q": "Can I cancel or move a booking?", "a": "[PLACEHOLDER]" }
+  ]
+}

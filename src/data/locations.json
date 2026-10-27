@@ -1,0 +1,11 @@
+{
+  "id": "where",
+  "menu": "Where & when",
+  "heading": "Where and when",
+  "text": "[PLACEHOLDER: Islington and Camden parks meeting points, days and times (exact parks, days and times to be confirmed), and what happens in bad weather.]",
+  "locations": [
+    { "park": "[PLACEHOLDER: Islington park to be confirmed]", "council": "Islington", "meetingPoint": "", "sessions": [] },
+    { "park": "[PLACEHOLDER: Camden park to be confirmed]", "council": "Camden", "meetingPoint": "", "sessions": [] }
+  ],
+  "showLocations": false
+}
