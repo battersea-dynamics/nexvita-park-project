@@ -30,7 +30,10 @@ export const hero = (h) => `<section class="hero"><div class="hero-inner">
 <a class="btn" href="${esc(h.buttonLink)}">${esc(h.buttonText)}</a>
 </div></section>`;
 
-export const textSection = (s) => block(s.id, s.heading, `<p>${esc(s.text)}</p>\n`);
+export const textSection = (s) => block(s.id, s.heading,
+  `<p>${esc(s.text)}</p>\n` +
+  (s.email ? `<p><a href="mailto:${esc(s.email)}">${esc(s.email)}</a></p>\n` : '') +
+  (s.phone ? `<p><a href="tel:${esc(String(s.phone).replace(/\s+/g, ''))}">${esc(s.phone)}</a></p>\n` : ''));
 
 export const activity = (a) => {
   let inner = `<p>${esc(a.text)}</p>\n`;
