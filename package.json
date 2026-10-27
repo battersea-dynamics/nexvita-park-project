@@ -1,0 +1,14 @@
+{
+  "name": "nexvita-park-project",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Nexvita website: yoga and physio in the park. Content in JSON, built to static HTML/CSS.",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs && npx --yes serve dist",
+    "worker": "node build.mjs && node scripts/make-worker.mjs",
+    "deploy": "echo 'Deployment is done by the assistant (Grok Bot) from dist-worker/_worker.js. See README: How the site goes online.'"
+  }
+}
