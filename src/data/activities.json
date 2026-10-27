@@ -14,7 +14,10 @@
       "price": "[PLACEHOLDER: price]"
     },
     "bookingPlaceholder": "Physio booking calendar will appear here",
-    "bookingEmbed": ""
+    "bookingEmbed": "nexvita-physio/physio-1-to-1",
+    "bookingNote": "Booking opens for May to September 2027: Monday to Friday 6pm to 8pm and Saturday 1pm to 6pm (UK time), one-hour sessions.",
+    "bookingButton": "Book a session",
+    "bookingStartMonth": "2027-05"
   },
   {
     "id": "yoga",

@@ -39,9 +39,12 @@ export const activity = (a) => {
     inner += `<ul>\n${[['Who it is for', d.whoFor], ['What to expect', d.whatToExpect], ['Length', d.length], ['Price', d.price]]
       .filter(([, v]) => v).map(([k, v]) => `<li><strong>${k}:</strong> ${esc(v)}</li>`).join('\n')}\n</ul>\n`;
   }
-  inner += a.bookingEmbed
-    ? `<iframe src="${esc(a.bookingEmbed)}" title="${esc(a.menu)} booking" style="width:100%;min-height:600px;border:0" loading="lazy"></iframe>\n`
-    : `<div class="placeholder">${esc(a.bookingPlaceholder)}</div>\n`;
+  if (a.bookingEmbed) {
+    const link = String(a.bookingEmbed).replace(/^https?:\/\/(app\.)?cal\.com\//, '');
+    inner += `<div class="booking">${a.bookingNote ? `<p>${esc(a.bookingNote)}</p>` : ''}<a class="btn" href="https://cal.com/${esc(link)}${a.bookingStartMonth ? `?month=${esc(a.bookingStartMonth)}` : ''}" target="_blank" rel="noopener" data-cal-namespace="nexvita" data-cal-link="${esc(link)}" data-cal-config='${JSON.stringify(Object.assign({layout:'month_view'}, a.bookingStartMonth ? {month:a.bookingStartMonth} : {}))}'>${esc(a.bookingButton || 'Book a session')}</a></div>\n`;
+  } else {
+    inner += `<div class="placeholder">${esc(a.bookingPlaceholder)}</div>\n`;
+  }
   return block(a.id, a.heading, inner);
 };
 
@@ -56,4 +59,11 @@ export const where = (w) => {
 export const faqs = (f) => block(f.id, f.heading,
   f.items.map(i => `<details><summary>${esc(i.q)}</summary><p>${esc(i.a)}</p></details>\n`).join(''));
 
-export const footer = (site) => `<footer>${esc(site.footer)}</footer>\n</body>\n</html>\n`;
+export const footer = (site) => `<footer>${esc(site.footer)}</footer>\n${calScript}</body>\n</html>\n`;
+
+// Cal.com official embed loader (element-click popup). Links still work without JS.
+const calScript = `<script>
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+if (document.querySelector("[data-cal-link]")) { Cal("init", "nexvita", {origin:"https://app.cal.com"}); Cal.ns.nexvita("ui", {cssVarsPerTheme:{light:{"cal-brand":"#2f5d46"}},hideEventTypeDetails:false,layout:"month_view"}); }
+</script>
+`;

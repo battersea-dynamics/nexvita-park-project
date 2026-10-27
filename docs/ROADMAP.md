@@ -11,3 +11,5 @@ Status: the one-page website is live. Items below are planned, in the order we e
    - Bookings are linked to a member through Cal.com notifications; the email address is discarded straight after linking.
    - Needs a short privacy notice (a scrambled ID is still personal data under UK GDPR).
 4. More activities: add a block to `src/data/activities.json`.
+
+Status note (October 2026): physio Cal.com booking (popup) is live on the site, open 1 May to 30 September 2027 only; extend the range in Cal.com when reviewed. Online payment not yet enabled. See README for how to add a booking link for a new activity.

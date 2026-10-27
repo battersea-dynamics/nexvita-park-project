@@ -28,3 +28,5 @@ h2{color:var(--green);font-size:2rem;margin:0 0 .6rem}
 details{background:#fff;border-radius:10px;padding:14px 18px;margin-bottom:10px}
 summary{cursor:pointer;font-weight:600;font-family:Arial,sans-serif}
 footer{background:var(--green);color:#e9f0e6;text-align:center;padding:30px 20px;font-family:Arial,sans-serif;font-size:.9rem}
+.booking{background:var(--sage,#e9f0e6);border-radius:12px;padding:22px;text-align:center;font-family:Arial,sans-serif}
+.booking p{margin:0 0 14px}

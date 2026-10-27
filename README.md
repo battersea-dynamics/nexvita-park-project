@@ -37,7 +37,8 @@ The menu at the top is created automatically, in this order: About, each activit
 
 Extra fields per activity:
 - `details` (who it is for, what to expect, length, price) are shown as a list only when `showDetails` is `true`.
-- `bookingEmbed`: leave empty to show the dashed "booking calendar will appear here" box; put a booking link (e.g. a Cal.com embed URL) there to show the real calendar instead.
+- `bookingEmbed`: leave empty to show the dashed "booking calendar will appear here" box. To switch on booking, put the Cal.com link there in the form `username/event-slug` (e.g. `"nexvita-physio/physio-1-to-1"`); the site then shows a "Book a session" button that opens the Cal.com booking popup (and works as a normal link if JavaScript is off). Optional: `bookingNote` (text above the button), `bookingButton` (button label), `bookingStartMonth` (`"YYYY-MM"`, the month the calendar opens on). Adding yoga booking later is just this data edit plus `npm run build`.
+- Physio booking on Cal.com is currently open only for 1 May to 30 September 2027 (Mon to Fri 18:00 to 20:00, Sat 13:00 to 18:00, London time). When this is reviewed, extend the date range in Cal.com and update `bookingNote` / `bookingStartMonth`. Payment is not yet taken online.
 
 In `locations.json`, set `showLocations` to `true` to show the list of parks as cards under the text.
 
