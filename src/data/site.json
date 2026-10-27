@@ -12,13 +12,17 @@
     "image": "images/hero.jpg"
   },
   "about": {
-    "id": "about", "menu": "About", "heading": "About us",
-    "text": "[PLACEHOLDER: a short, warm introduction to you and your yoga teacher partner, your qualifications, and why you teach outdoors.]"
+    "id": "about",
+    "menu": "About",
+    "heading": "About us",
+    "text": "Nexvita brings gentle movement outdoors. Our physiotherapist is registered with the Health and Care Professions Council (HCPC) and offers calm, one-to-one, exercise-based sessions in your local park. Working outside, among trees and fresh air, helps the body and mind to relax, and it makes moving well feel natural again. Alongside the physio sessions, yoga classes will be offered for those who prefer to move in a group. Whether you are rebuilding after an injury or simply want to feel stronger and steadier, you are welcome here."
   },
   "contact": {
-    "id": "contact", "menu": "Contact", "heading": "Contact",
-    "text": "[PLACEHOLDER: contact email or form.]",
-    "email": "",
+    "id": "contact",
+    "menu": "Contact",
+    "heading": "Contact",
+    "text": "Questions before you book? Send us an email and we will reply as soon as we can.",
+    "email": "battersea.dynamics@gmail.com",
     "phone": ""
   },
   "footer": "© Nexvita. Yoga and physio in the park."

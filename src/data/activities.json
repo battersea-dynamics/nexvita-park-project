@@ -5,13 +5,13 @@
     "heading": "Physio in the park",
     "type": "one-to-one",
     "capacity": 1,
-    "text": "[PLACEHOLDER: one-to-one, exercise-based physiotherapy sessions outdoors. What to expect, session length and price.]",
-    "showDetails": false,
+    "text": "Gentle, exercise-based physiotherapy in the fresh air, one-to-one with an HCPC-registered physiotherapist. Together we work on easing back pain that keeps coming back, rebuilding strength after an injury, improving posture, steadying your core and sharpening your balance and body awareness, all at a pace that suits you. Fresh air, trees and open space make it easier to move well and feel calm while you recover.",
+    "showDetails": true,
     "details": {
-      "whoFor": "[PLACEHOLDER: who it is for]",
-      "whatToExpect": "[PLACEHOLDER: what to expect]",
-      "length": "[PLACEHOLDER: session length]",
-      "price": "[PLACEHOLDER: price]"
+      "whoFor": "Adults aged 18 and over. Especially helpful if you are managing ongoing or worsening back pain, regaining strength after an injury, or want to improve your posture, core stability and balance in a gentle, natural setting.",
+      "whatToExpect": "A calm, personal session led by an HCPC-registered physiotherapist. Your session is exercise-based and hands-free: we choose gentle movements for you, show you how to do them well, and build your strength step by step. Please wear comfortable clothes you can move in, and bring water.",
+      "length": "One hour",
+      "price": "£30 per session"
     },
     "bookingPlaceholder": "Physio booking calendar will appear here",
     "bookingEmbed": "nexvita-physio/physio-1-to-1",
